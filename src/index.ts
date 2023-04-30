@@ -2,7 +2,7 @@ import { server } from './server'
 
 
 server.get('/', async () => {
-  return {bebra: 'sdf'}
+  return {init: 'success'}
 })
 
 server.listen({port: 3000}, (err, adress) => {
