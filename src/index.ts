@@ -1,8 +1,8 @@
 import { server } from './server'
-
+import path = require('path')
 
 server.get('/', async () => {
-  return {init: 'success'}
+  return path.extname('./index.ts')
 })
 
 server.listen({port: 3000}, (err, adress) => {
